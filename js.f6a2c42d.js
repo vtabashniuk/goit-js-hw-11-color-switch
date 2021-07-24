@@ -3,6 +3,6 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"DKOX":[function(require,module,exports) {
 "use strict";function e(e){return e[Math.floor(Math.random()*e.length)]}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=e;
 },{}],"QvaY":[function(require,module,exports) {
-"use strict";var e=require("./variables"),r=t(require("./random-color-picker"));function t(e){return e&&e.__esModule?e:{default:e}}var n=null;e.refs.startBtn.addEventListener("click",function(){n=setInterval(function(){e.refs.bodyElement.style.backgroundColor=(0,r.default)(e.colors)},1e3)}),e.refs.stopBtn.addEventListener("click",function(){clearInterval(n)});
+"use strict";var e=require("./variables"),r=t(require("./random-color-picker"));function t(e){return e&&e.__esModule?e:{default:e}}var n=null;e.refs.startBtn.addEventListener("click",function(){e.refs.startBtn.disabled=!0,n=setInterval(function(){e.refs.bodyElement.style.backgroundColor=(0,r.default)(e.colors)},1e3)}),e.refs.stopBtn.addEventListener("click",function(){clearInterval(n),e.refs.startBtn.disabled=!1});
 },{"./variables":"u9EY","./random-color-picker":"DKOX"}]},{},["QvaY"], null)
-//# sourceMappingURL=/goit-js-hw-11-color-switch/js.b89f36c2.js.map
+//# sourceMappingURL=/goit-js-hw-11-color-switch/js.f6a2c42d.js.map
