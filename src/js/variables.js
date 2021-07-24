@@ -13,4 +13,6 @@ const refs = {
   stopBtn: document.querySelector("[data-action=stop]"),
 };
 
-export { colors, refs };
+let intervalId = null;
+
+export { colors, refs, intervalId };
